@@ -1,4 +1,11 @@
 #!/bin/bash
+echo "Patching vulnerable system"
+
+
+echo "Adding sources and requirements"
+sudo ./addSources.sh
+sudo apt-get update
+sudo apt-get install build-essential patch
 
 SOURCES=/etc/apt/sources.list
 CODENAME=$(cat /etc/apt/sources.list | grep us.archive.ubuntu.com | head -n1 | awk '{print $3}')
