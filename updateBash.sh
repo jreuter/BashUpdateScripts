@@ -5,6 +5,13 @@
 # This code came from here:
 # http://superuser.com/questions/816787/how-do-i-patch-the-shellshock-vulnerability-on-an-obsolete-ubuntu-system-that-i
 
+
+
+echo "Adding sources and requirements."
+sudo ./addSources.sh
+sudo apt-get update
+sudo apt-get install build-essential patch
+
 mkdir src
 cd src
 wget http://ftp.gnu.org/gnu/bash/bash-4.3.tar.gz
