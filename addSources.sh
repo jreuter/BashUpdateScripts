@@ -17,7 +17,7 @@ if [[ -z ${CHECK} ]]; then
     # These sources came from here:
     # https://help.ubuntu.com/community/EOLUpgrades#Requirements
 
-    cat << HEREDOC >> $SOURCES
+    cat << HEREDOC >> ${SOURCES}
 
     ## EOL upgrade sources.list
     # Required
