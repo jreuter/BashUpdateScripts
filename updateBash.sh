@@ -27,3 +27,5 @@ for i in $(seq -f "%03g" 0 26);do patch -p0 < ../bash43-${i}; done
 cd ${DIR} 
 rm -r src
 
+echo "Bash has been patched.  Please run ./testBash.sh again to" \
+	 "make sure.  You should see a Bash warning if the patch was successful."
